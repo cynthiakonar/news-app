@@ -25,8 +25,8 @@ class HomeScreen extends StatelessWidget {
             children: [
               Stack(
                 children: [
-                  Images().newsImage(height * 0.38),
-                  Shadows().darkShadow(height * 0.38),
+                  Images().newsImage(height * 0.37),
+                  Shadows().darkShadow(height * 0.37),
                   TextWidget().newsHeadline(),
                   Buttons().arrowButton(),
                   Buttons().filterButton()
@@ -38,6 +38,23 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
+        bottomNavigationBar: customBottomNavBar(),
+      ),
+    );
+  }
+
+  Widget customBottomNavBar() {
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 15),
+      color: Colors.white,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Image.asset("assets/nav_icon1.png"),
+          Image.asset("assets/nav_icon2.png"),
+          Image.asset("assets/nav_icon3.png"),
+          Image.asset("assets/nav_icon4.png"),
+        ],
       ),
     );
   }

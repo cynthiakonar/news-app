@@ -16,7 +16,7 @@ class ResearchNewsScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TextWidget().expertOpinionText(),
-          const SizedBox(height: 12),
+          const SizedBox(height: 10),
           Analytics().analytics(width),
           ListViewWidgets().newsList(),
         ],
