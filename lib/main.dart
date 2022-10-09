@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news/splash.dart';
 
 import 'views/home/home_screen.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }
